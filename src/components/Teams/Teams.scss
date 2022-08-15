@@ -1,0 +1,47 @@
+.wholeContainer {
+    font-style: sans-serif;
+    font-weight: 700;
+.teamBox {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 225px;
+    background-color: lightpink;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 20%;
+    
+}
+
+.counterBox {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 30%;
+
+    .plusButton {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .minusButton {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-size: 20px;
+    }
+}
+
+
+}

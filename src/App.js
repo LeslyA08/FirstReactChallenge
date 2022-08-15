@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Teams from './components/Teams/Teams.jsx'
+import team from './data/team'
 
 function App() {
+  
+  const mappedTeams = team.map(member => {
+    return <Teams teamMember = {member}  />
+  })
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <div className="wholePage">
+     <h1>Ticket Tracker</h1>
+     <div className="wholeContainer">
+      {mappedTeams}
+     </div>
     </div>
+    </div>
+    </>
   );
 }
 
 export default App;
+
+//<h2>Total: {this.state.counters.map((counter) => { return counter.value; }).reduce((a, b) => a + b, 0)}</h2>//
